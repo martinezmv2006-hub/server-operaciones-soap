@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nexos.com/gs_operaciones_web_servicee"
+           targetNamespace="http://nexos.com/gs_operaciones_web_service" elementFormDefault="qualified">
+
+    <xs:element name="getSumaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valor1" type="xs:double"/>
+                <xs:element name="valor2" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSumaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorTotal" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getRestaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valor1" type="xs:double"/>
+                <xs:element name="valor2" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getRestaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorTotal" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+	 <xs:element name="getMultiplicacionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valor1" type="xs:double"/>
+                <xs:element name="valor2" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getMultiplicacionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorTotal" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getDivisionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valor1" type="xs:double"/>
+                <xs:element name="valor2" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDivisionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorTotal" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
